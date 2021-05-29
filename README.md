@@ -9,11 +9,11 @@
 ## Installation
 
 ### Swift Package Manager
-To add a package dependency to your Xcode project, select **File** > **Swift Packages** > **Add Package** Dependency and enter `Aether` repository URL:
+To add a package dependency to your Xcode project, select **File** > **Swift Packages** > **Add Package Dependency** and enter `Aether` repository URL:
 ```
 https://github.com/SwiftExtensions/Aether.git
 ```
-You can also navigate to your target’s General pane, and in the “Frameworks, Libraries, and Embedded Content” section, click the + button, select Add Other, and choose Add Package Dependency.
+You can also navigate to your target’s **General** pane, and in the “_Frameworks, Libraries, and Embedded Content_” section, click the **+** button, select **Add Other**, and choose **Add Package Dependency**.
 
 For more information, see [`Adding Package Dependencies to Your App`](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app).
 
