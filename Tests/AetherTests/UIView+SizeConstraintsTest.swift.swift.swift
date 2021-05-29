@@ -50,3 +50,54 @@ extension UIViewSizeConstraintsTest {
 
     
 }
+
+// MARK: - Size Constraints
+
+extension UIViewSizeConstraintsTest {
+    func test_setDefaultSizeConstraint_createsCorrectDefalutValues() {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        let width: CGFloat = 10
+        let height: CGFloat = 20
+        
+        let size = CGSize(width: width, height: height)
+        let (widthConstraint, heightConstraint) = view.setConstraints(size: size)
+        
+        XCTAssertEqual(widthConstraint.relation, .equal)
+        XCTAssertEqual(widthConstraint.priority, .required)
+        XCTAssertTrue(widthConstraint.isActive)
+        
+        XCTAssertEqual(heightConstraint.relation, .equal)
+        XCTAssertEqual(heightConstraint.priority, .required)
+        XCTAssertTrue(heightConstraint.isActive)
+    }
+    
+    func test_setSizeConstraint_createsCorrectValues() {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        let width: CGFloat = 10
+        let height: CGFloat = 20
+        let relation: NSLayoutConstraint.Relation = .greaterThanOrEqual
+        let priority: UILayoutPriority = .defaultHigh
+        let isActive = false
+        
+        let size = CGSize(width: width, height: height)
+        let (widthConstraint, heightConstraint) = view.setConstraints(
+            size: size,
+            relatedBy: relation,
+            priority: priority,
+            isActive: isActive)
+        
+        XCTAssertEqual(widthConstraint.constant, width)
+        XCTAssertEqual(widthConstraint.relation, relation)
+        XCTAssertEqual(widthConstraint.priority, priority)
+        XCTAssertEqual(widthConstraint.isActive, isActive)
+        
+        XCTAssertEqual(heightConstraint.constant, height)
+        XCTAssertEqual(heightConstraint.relation, relation)
+        XCTAssertEqual(heightConstraint.priority, priority)
+        XCTAssertEqual(heightConstraint.isActive, isActive)
+    }
+
+    
+}
