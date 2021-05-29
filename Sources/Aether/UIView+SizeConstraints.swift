@@ -10,7 +10,7 @@ extension UIView {
     /// - Returns: An `NSLayoutConstraint` object.
     ///
     /// ```
-    /// // A constraint defined by standard UIKit/AppKit API
+    /// // A constraint defined by standard UIKit API
     /// let view = UIView()
     /// // Required for Auto Layout
     /// view.translatesAutoresizingMaskIntoConstraints = false
@@ -52,7 +52,7 @@ extension UIView {
     /// - Returns: An `NSLayoutConstraint` object.
     ///
     /// ```
-    /// // A constraint defined by standard UIKit/AppKit API
+    /// // A constraint defined by standard UIKit API
     /// let view = UIView()
     /// // Required for Auto Layout
     /// view.translatesAutoresizingMaskIntoConstraints = false
@@ -95,7 +95,7 @@ extension UIView {
     /// - Returns: A tuple of  a width and a height `NSLayoutConstraint`'s objects.
     ///
     /// ```
-    /// // Constraints defined by standard UIKit/AppKit API
+    /// // Constraints defined by standard UIKit API
     /// let view = UIView()
     /// // Required for Auto Layout
     /// view.translatesAutoresizingMaskIntoConstraints = false
@@ -131,7 +131,7 @@ extension UIView {
     /// - Returns: A tuple of  a width and a height `NSLayoutConstraint`'s objects.
     ///
     /// ```
-    /// // Constraints defined by standard UIKit/AppKit API
+    /// // Constraints defined by standard UIKit API
     /// let view = UIView()
     /// // Required for Auto Layout
     /// view.translatesAutoresizingMaskIntoConstraints = false
